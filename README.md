@@ -6,3 +6,4 @@
 
 ## 2026-01-28
 - Oldal felépítésének tervezése
+-  https://www.figma.com/design/Sgl1i0eDBQDBW6IArO45Fy/
