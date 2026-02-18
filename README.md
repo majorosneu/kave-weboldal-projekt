@@ -9,4 +9,7 @@
 -  https://www.figma.com/design/Sgl1i0eDBQDBW6IArO45Fy/
 
 ## 2026-02-11
-- HTML kód írása
+- HTML kód létrehozása
+
+## 2026-02-18
+- Weblap alapjainak lefektetése
