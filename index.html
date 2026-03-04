@@ -1,31 +1,155 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kávé webshop</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <title>KávéPont | Főoldal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
+<style>
+
+
+</style>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Kávé webshop</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Kezdőlap <span class="sr-only"></span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">2. oldal</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">3. oldal</a>
-            </li>
-          </ul>
+    <nav class="navbar navbar-expand-lg glass-nav sticky-top">
+        <div class="container">
+            <a class="navbar-brand brand-text" href="index.html">KávéPont</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Navigáció váltása">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Főoldal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Webshop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rolunk.html">Rólunk</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kapcsolat.html">Kapcsolat</a></li>
+                </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6 fade-up">
+                    <span class="kicker">Specialty Coffee House</span>
+                    <h1 class="hero-title">Kortyolj lassabban. Gondolkodj tisztábban.</h1>
+                    <p class="hero-sub mb-4">Modern kávézó azoknak, akik szeretik az egyszerű, szép tereket és a komolyan vett kávéélményt.</p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <a href="menu.html" class="btn btn-coffee">Webshop megnyitása</a>
+                        <a href="kapcsolat.html" class="btn btn-coffee-outline">Asztalfoglalás</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 fade-up delay-1">
+                    <img src="kepek/fooldal.webp" class="img-fluid page-photo hero-photo" alt="Modern kávézó enterior">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="pb-5">
+        <div class="container">
+            <div class="row g-3 fade-up delay-1">
+                <div class="col-md-4">
+                    <div class="stats-wrap text-center">
+                        <p class="stat-number">8 500+</p>
+                        <p class="mb-0 text-muted">készített csésze / hónap</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stats-wrap text-center">
+                        <p class="stat-number">12</p>
+                        <p class="mb-0 text-muted">signature ital</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stats-wrap text-center">
+                        <p class="stat-number">4.9</p>
+                        <p class="mb-0 text-muted">átlag értékelés</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-4">
+        <div class="container">
+            <h2 class="section-title fade-up">Mai kedvencek</h2>
+            <p class="section-lead mb-4 fade-up delay-1">Letisztult ízprofilok, tiszta alapanyagok, modern prezentáció.</p>
+            <div class="row g-4">
+                <div class="col-md-4 fade-up delay-1">
+                    <article class="soft-card h-100 overflow-hidden">
+                        <img src="kepek/espressotonic.webp" class="w-100 feature-photo" alt="Espresso tonic">
+                        <div class="p-4">
+                            <h3 class="h5">Espresso Tonic</h3>
+                            <p class="text-muted mb-2">Friss, citrusos, elegáns keserűséggel.</p>
+                            <span class="price">1 490 Ft</span>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4 fade-up delay-2">
+                    <article class="soft-card h-100 overflow-hidden">
+                        <img src="kepek/flatwhite.webp" class="w-100 feature-photo" alt="Flat white">
+                        <div class="p-4">
+                            <h3 class="h5">Flat White</h3>
+                            <p class="text-muted mb-2">Selymes tejhab és testes dupla shot.</p>
+                            <span class="price">1 350 Ft</span>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4 fade-up delay-3">
+                    <article class="soft-card h-100 overflow-hidden">
+                        <img src="kepek/crossaintfilter.webp" class="w-100 feature-photo" alt="Croissant és kávé">
+                        <div class="p-4">
+                            <h3 class="h5">Vajas Croissant + Filter</h3>
+                            <p class="text-muted mb-2">Ropogós textúrák, tiszta etió pörkölés.</p>
+                            <span class="price">1 990 Ft</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h3 class="h5 mb-3">KávéPont</h3>
+                    <p class="mb-0 text-footer">Minőségi kávé és nyugodt hangulat minden nap.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="h6 text-uppercase mb-3">Elérhetőség</h3>
+                    <p class="mb-1 text-footer">1117 Budapest, Pörkölő köz 12.</p>
+                    <p class="mb-1 text-footer">+36 20 456 7890</p>
+                    <p class="mb-0 text-footer">kapcsolat@kavepont.hu</p>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="h6 text-uppercase mb-3">Nyitvatartás</h3>
+                    <p class="mb-1 text-footer">H-P: 07:00 - 19:00</p>
+                    <p class="mb-1 text-footer">Szo: 08:00 - 16:00</p>
+                    <p class="mb-0 text-footer">V: 09:00 - 14:00</p>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center pt-4 mt-4 border-top footer-bottom">
+                <small>&copy; 2026 KávéPont. Minden jog fenntartva.</small>
+                <small>Instagram: @kavepont | Facebook: KávéPont</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="chatbot.js"></script>
 </body>
 </html>
+
+
+
+
+
