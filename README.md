@@ -13,3 +13,6 @@
 
 ## 2026-02-18
 - Weblap alapjainak lefektetése
+
+## 2026-03-04
+- Weblap véglegesítése, tesztelési fázis
