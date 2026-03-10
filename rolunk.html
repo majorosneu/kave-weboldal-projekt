@@ -1,29 +1,43 @@
 ﻿<!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KávéPont | Rólunk</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=block"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg glass-nav sticky-top">
+    <nav class="navbar navbar-expand-lg glass-nav">
         <div class="container">
             <a class="navbar-brand brand-text" href="index.html">KávéPont</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Navigáció váltása">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Navigáció váltása">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="mainNav">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link" href="index.html">Főoldal</a></li>
                     <li class="nav-item"><a class="nav-link" href="menu.html">Webshop</a></li>
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="rolunk.html">Rólunk</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="rolunk.html">Rólunk</a>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="kapcsolat.html">Kapcsolat</a></li>
                 </ul>
+                <div class="d-flex ms-lg-3 mt-3 mt-lg-0">
+                    <button type="button" class="btn btn-coffee-outline cart-nav-btn" data-bs-toggle="modal"
+                        data-bs-target="#cartModal">
+                        Kosár
+                        <span id="cart-count" class="badge rounded-pill cart-count ms-2">0 tétel</span>
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
@@ -32,13 +46,17 @@
         <div class="container">
             <section class="row g-4 align-items-center mb-4">
                 <div class="col-lg-6 fade-up">
-                    <span class="kicker">Történetünk</span>
+                    <span class="kicker">Our story</span>
                     <h1 class="section-title">Kávézó, ami nyugodt marad</h1>
-                    <p class="section-lead">A KávéPont 2016-ban nyílt meg családi vállalkozásként, egyetlen cél köré építve: legyen egy hely Budapesten, ahol a specialty kávé és a barátságos figyelem egyszerre természetes.</p>
-                    <p class="mb-0 text-muted">Azóta is kis léptékben fejlődünk, szezonális kínálattal, stabil minőséggel és állandó törzsvendég-közösséggel.</p>
+                    <p class="section-lead">A KávéPont 2016-ban nyílt meg családi vállalkozásként, egyetlen cél köré
+                        építve: legyen egy hely Budapesten, ahol a specialty kávé és a barátságos figyelem egyszerre
+                        természetes.</p>
+                    <p class="mb-0 text-muted">Azóta is kis léptékben fejlődünk, szezonális kínálattal, stabil
+                        minőséggel és állandó törzsvendég-közösséggel.</p>
                 </div>
                 <div class="col-lg-6 fade-up delay-1">
-                    <img src="https://images.pexels.com/photos/6205771/pexels-photo-6205771.jpeg?auto=compress&cs=tinysrgb&w=1200" class="img-fluid page-photo" alt="Barista munkában">
+                    <img src="https://images.pexels.com/photos/6205771/pexels-photo-6205771.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                        class="img-fluid page-photo" alt="Barista munkában">
                 </div>
             </section>
 
@@ -57,8 +75,10 @@
                 <div class="col-lg-6 fade-up delay-2">
                     <div class="soft-card p-4 p-md-5 h-100 story-card">
                         <h2 class="h4 mb-3">Rövid történetünk</h2>
-                        <p class="mb-3">A KávéPontot egy testvérpár indította 2016 tavaszán, kezdetben 28 férőhellyel és 6 itallal.</p>
-                        <p class="mb-0">Ma már saját online rendelésünk is van, de megmaradtunk annak, aminek indultunk: egy emberközeli, családias kávézónak.</p>
+                        <p class="mb-3">A KávéPontot egy testvérpár indította 2016 tavaszán, kezdetben 28 férőhellyel és
+                            6 itallal.</p>
+                        <p class="mb-0">Ma már saját online rendelésünk is van, de megmaradtunk annak, aminek indultunk:
+                            egy emberközeli, családias kávézónak.</p>
                     </div>
                 </div>
             </section>
@@ -77,7 +97,8 @@
                         <article class="milestone-card h-100">
                             <p class="milestone-year">2019</p>
                             <h3 class="h6">Saját pörkölő partner</h3>
-                            <p class="mb-0 text-muted">Állandó pörkölő partnerrel egységes, stabil minőséget hoztunk.</p>
+                            <p class="mb-0 text-muted">Állandó pörkölő partnerrel egységes, stabil minőséget hoztunk.
+                            </p>
                         </article>
                     </div>
                     <div class="col-md-4">
@@ -112,14 +133,19 @@
                     <p class="mb-0 text-footer">V: 09:00 - 14:00</p>
                 </div>
             </div>
-            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center pt-4 mt-4 border-top footer-bottom">
+            <div
+                class="d-flex flex-column flex-md-row justify-content-between align-items-md-center pt-4 mt-4 border-top footer-bottom">
                 <small>&copy; 2026 KávéPont. Minden jog fenntartva.</small>
                 <small>Instagram: @kavepont | Facebook: KávéPont</small>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="cart.js"></script>
     <script src="chatbot.js"></script>
 </body>
+
 </html>
