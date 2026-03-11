@@ -1,43 +1,35 @@
 ﻿<!DOCTYPE html>
 <html lang="hu">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KávéPont | Főoldal</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=block"
-        rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 
+<style>
+
+
+</style>
+
 <body>
-    <nav class="navbar navbar-expand-lg glass-nav">
+    <nav class="navbar navbar-expand-lg glass-nav sticky-top">
         <div class="container">
             <a class="navbar-brand brand-text" href="index.html">KávéPont</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-                aria-controls="mainNav" aria-expanded="false" aria-label="Navigáció váltása">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Navigáció váltása">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="mainNav">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Főoldal</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Főoldal</a></li>
                     <li class="nav-item"><a class="nav-link" href="menu.html">Webshop</a></li>
                     <li class="nav-item"><a class="nav-link" href="rolunk.html">Rólunk</a></li>
                     <li class="nav-item"><a class="nav-link" href="kapcsolat.html">Kapcsolat</a></li>
                 </ul>
-                <div class="d-flex ms-lg-3 mt-3 mt-lg-0">
-                    <button type="button" class="btn btn-coffee-outline cart-nav-btn" data-bs-toggle="modal"
-                        data-bs-target="#cartModal">
-                        Kosár
-                        <span id="cart-count" class="badge rounded-pill cart-count ms-2">0 tétel</span>
-                    </button>
-                </div>
             </div>
         </div>
     </nav>
@@ -46,10 +38,9 @@
         <div class="container">
             <div class="row align-items-center g-4">
                 <div class="col-lg-6 fade-up">
-                    <span class="kicker">Specialty Kávéház</span>
+                    <span class="kicker">Specialty Coffee House</span>
                     <h1 class="hero-title">Kortyolj lassabban. Gondolkodj tisztábban.</h1>
-                    <p class="hero-sub mb-4">Modern kávézó azoknak, akik szeretik az egyszerű, szép tereket és a
-                        komolyan vett kávéélményt.</p>
+                    <p class="hero-sub mb-4">Modern kávézó azoknak, akik szeretik az egyszerű, szép tereket és a komolyan vett kávéélményt.</p>
                     <div class="d-flex flex-wrap gap-2">
                         <a href="menu.html" class="btn btn-coffee">Webshop megnyitása</a>
                         <a href="kapcsolat.html" class="btn btn-coffee-outline">Asztalfoglalás</a>
@@ -74,7 +65,7 @@
                 <div class="col-md-4">
                     <div class="stats-wrap text-center">
                         <p class="stat-number">12</p>
-                        <p class="mb-0 text-muted">specialitás</p>
+                        <p class="mb-0 text-muted">signature ital</p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -90,8 +81,7 @@
     <section class="py-4">
         <div class="container">
             <h2 class="section-title fade-up">Mai kedvencek</h2>
-            <p class="section-lead mb-4 fade-up delay-1">Letisztult ízprofilok, tiszta alapanyagok, modern prezentáció.
-            </p>
+            <p class="section-lead mb-4 fade-up delay-1">Letisztult ízprofilok, tiszta alapanyagok, modern prezentáció.</p>
             <div class="row g-4">
                 <div class="col-md-4 fade-up delay-1">
                     <article class="soft-card h-100 overflow-hidden">
@@ -147,19 +137,19 @@
                     <p class="mb-0 text-footer">V: 09:00 - 14:00</p>
                 </div>
             </div>
-            <div
-                class="d-flex flex-column flex-md-row justify-content-between align-items-md-center pt-4 mt-4 border-top footer-bottom">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center pt-4 mt-4 border-top footer-bottom">
                 <small>&copy; 2026 KávéPont. Minden jog fenntartva.</small>
                 <small>Instagram: @kavepont | Facebook: KávéPont</small>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <script src="cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="chatbot.js"></script>
 </body>
-
 </html>
+
+
+
+
+
